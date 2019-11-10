@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth:700&display=swap" rel="stylesheet"> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,57 +14,46 @@
 <body>
     <div id="snow_fall" class="particles"></div>
 
-    <script type="text/javascript" src="particles.js"></script>
-    <script type="text/javascript" src="app.js"></script>
-
-<body>
-
-      
-    <h1>FON<span class="logo_boja">IS</span> SANTA</h1>
-    
-    <div class="uvodni_paragraf">Prijavi se za prvi Secret Santa Fonis-ov projekat! Poklonom ulepšaj<br>nečije novogodišnje praznike,
-         a zauzvrat očekuj iznenađenje od svog Fonis Sante.</div>
-
-     <!-- Display the countdown timer in an element -->
-<p id="demo"></p>
-
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Dec 20, 2019 00:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-
-<div class="odbrojavanje">DO ZATVARANJA PRIJAVA</div>    
-
-    <button type="button"><a href="#">Prijavi se!</a></button>
-    
-    
    
-</body>
+
+    <body>
+            <div>
+                    <div class="nav">
+                        
+                        <ul>
+                            <li class="hamburger"> 
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div> 
+                            </li>
+                            <li><a href="#">organizacija</a></li>
+                          
+                         
+                       
+                            <li><a href="#">korisni linkovi</a></li>
+                            <li><a href="#">kontakt</a></li>
+                        </ul>
+                    </div>
+
+        <h1>FON<span class="logo_boja">IS</span> SANTA</h1>
+        <div class="okvir">
+            <div class="uvodni_paragraf">Prijavi se za prvi Secret Santa Fonis-ov projekat! Poklonom ulepšaj<br>nečije
+                novogodišnje praznike,
+                a zauzvrat očekuj iznenađenje od svog Fonis Sante.</div>
+
+            <!-- Display the countdown timer in an element -->
+            <p id="demo"></p>
+
+            <div class="odbrojavanje">DO ZATVARANJA PRIJAVA</div>
+
+            <button type="button"><a href="#">Prijavi se!</a></button>
+        </div>
+
+<script type="text/javascript" src="particles.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="app2.js"></script>
+
+
+    </body>
 
 </html>
