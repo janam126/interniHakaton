@@ -4,29 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<<<<<<< HEAD
     <title>Nova Godina</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+      
     <h1>FON<span class="logo_boja">IS</span> SANTA</h1>
     
-    <p>Prijavi se za prvi Secret Santa Fonis-ov projekat! Poklonom ulepšaj<br>nečije novogodišnje praznike,
-         a zauzvrat očekuj iznenađenje od svog Fonis Sante.</p>
+    <div class="uvodni_paragraf">Prijavi se za prvi Secret Santa Fonis-ov projekat! Poklonom ulepšaj<br>nečije novogodišnje praznike,
+         a zauzvrat očekuj iznenađenje od svog Fonis Sante.</div>
 
-    <button type="button">Prijavi se!</button>     
-=======
-    <title>Nova Godinaaaa!</title>
-</head>
-<body>
-    <h1>Poy</h1>
-    <h2 id="klik"></h2>
-    <br><br>
-    <button onclick="povecajBrKlikova()">Klik</button>
+     <!-- Display the countdown timer in an element -->
+<p id="demo"></p>
 
-    <div id="particles-js"></div>
-<script src="app.js"></script>
->>>>>>> d79f336599a4401d3865dfe03fd454daebba36ab
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 20, 2019 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+<div class="odbrojavanje">DO ZATVARANJA PRIJAVA</div>    
+
+    <button type="button"><a href="#">Prijavi se!</a></button>
+    
+    
+   
 </body>
 
 </html>
