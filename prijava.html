@@ -9,41 +9,59 @@
     <link rel="icon" href="img/logoS2S.png">
     <link rel="stylesheet" href="prijava.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth:700&display=swap" rel="stylesheet">
     <title>Prijava</title>
 </head>
 
 <body>
     <div id="snow_fall" class="particles"></div>
-    <h1>Prijava za Fonis Santa</h1>
+    <h1>PRIJAVA ZA FON<span class="ime_boja">IS</span> SANTA</h1>
 
-    <form name="submit-to-google-sheet">
-        <div class="forma">
-            <h2>Vaš e-mail: <span class="star">*</span></h2>
-            <input id="aaa" name="email" type="text" class="form-control aaa">
-            <h2>Vaše ime i prezime: <span class="star">*</span></h2>
-            <input id="aaa" name="ime-prezime" type="text" class="form-control aaa">
+    <div class="okvir">
 
-            <h2>Da li ste u mogućnosti da ponesete laptop? <span class="star">*</span></h2>
-            <h3>Za neke radionice je laptop neophodan.</h3>
+        <form name="submit-to-google-sheet">
+            <div class="forma">
+                <h2>Vaš e-mail: <span class="star">*</span></h2>
+                <input id="aaa" name="email" type="text" class="form-control aaa">
+                <h2>Vaše ime i prezime: <span class="star">*</span></h2>
+                <input id="aaa" name="ime-prezime" type="text" class="form-control aaa">
 
-            <label class="container">Da
-                <input class="dva" type="radio" value="Da" name="laptop">
-                <span class="checkmark2"></span>
-            </label>
-            <label class="container">Ne
-                <input class="dva" type="radio" value="Ne" name="laptop">
-                <span class="checkmark2"></span>
-            </label>
+                <h2>Kakav poklon biste voleli da dobijete? <span class="star">*</span></h2>
+                <!-- <h3>Za neke radionice je laptop neophodan.</h3> -->
+
+                <label class="container">Knjigu
+                    <input class="pet" type="checkbox" value="Knjigu" name="pet">
+                    <span class="checkmark2"></span>
+                </label>
+                <label class="container">Slatkiše
+                    <input class="pet" type="checkbox" value="Slatkiše" name="pet">
+                    <span class="checkmark2"></span>
+                </label>
+                <label class="container">Kozmetiku
+                    <input class="pet" type="checkbox" value="Kozmetiku" name="pet">
+                    <span class="checkmark2"></span>
+                </label>
+                <label class="container">Šolju
+                    <input class="pet" type="checkbox" value="Šolju" name="pet">
+                    <span class="checkmark2"></span>
+                </label>
+                <label class="container">Čarape
+                    <input class="pet" type="checkbox" value="Čarape" name="pet">
+                    <span class="checkmark2"></span>
+                </label>
 
 
-        <button id="dugme" type="submit" class="form-control submit" onclick="prijava();">POTVRDI</button>
-        <h1 id="potvrda"></h1>
-        <br><br>
 
+                <button id="dugme" type="submit" class="form-control submit" onclick="prijava();">POTVRDI</button>
+                <h1 id="potvrda"></h1>
+                <br><br>
+        </form>
+    </div>
 
     <script type="text/javascript" src="prijava.js"></script>
     <script type="text/javascript" src="particles.js"></script>
     <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="app2.js"></script>
 </body>
 
 </html>

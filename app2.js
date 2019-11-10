@@ -38,3 +38,7 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+function prijava(){
+    alert("Uspešno ste se prijavili!");
+}
